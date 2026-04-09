@@ -94,6 +94,7 @@
   .blog-post-preview { background: var(--bg2); padding: 1.5rem 2rem; display: grid; grid-template-columns: 1fr auto; gap: 1rem; align-items: center; border-bottom: 0.5px solid var(--border-subtle); text-decoration: none; transition: background 0.2s; }
   .blog-post-preview:last-child { border-bottom: none; }
   .blog-post-preview:hover { background: var(--bg3); }
+  .blog-post-preview.proximamente { opacity: 0.45; pointer-events: none; }
   .post-date { font-size: 10px; letter-spacing: 0.15em; color: var(--text-dim); text-transform: uppercase; margin-bottom: 0.4rem; }
   .post-title { font-family: var(--serif); font-size: 18px; font-weight: 500; color: var(--purple-pale); margin-bottom: 0.3rem; line-height: 1.3; }
   .post-snippet { font-size: 13px; font-weight: 300; color: var(--text-muted); line-height: 1.6; }
@@ -147,7 +148,7 @@
     <div class="about-sigil"><div class="sigil-ring"></div><div class="sigil-inner">DP</div></div>
     <div class="about-text">
       <p><strong>Daniel Pozos</strong> es escritor de fantasía y ciencia ficción. Escribió su primer libro para su hija — <em>Pedro, el ratón mágico</em> — y desde entonces no ha podido parar. Actualmente trabaja en su primera novela (cuando no estoy jugando Overwatch o Roblox con mi hija).</p>
-      <p>Escribe en español porque es el idioma en el que sueña, y porque cree que las mejores historias nacen desde adentro. (También hago uso indiscriminado de los paréntesis porque siento que son las sombras de mis pensamientos mientras escribo) </p>
+      <p>Escribe en español porque es el idioma en el que sueña, y porque cree que las mejores historias nacen desde adentro. (También hago uso indiscriminado de los paréntesis porque siento que son las sombras de mis pensamientos mientras escribo)</p>
       <div class="about-lang">✦ Escribe en español · Reads in both</div>
     </div>
   </div>
@@ -187,6 +188,7 @@
          PARA AGREGAR UN POST NUEVO:
          Copia el bloque <a> de abajo, pégalo aquí arriba,
          y cambia: href, post-date, post-title, post-snippet
+         Cuando el post esté listo, quita la clase "proximamente"
          ===================================================== -->
 
     <a href="post1.html" class="blog-post-preview">
@@ -197,27 +199,25 @@
       </div>
       <div class="post-arrow">→</div>
     </a>
-   
-<a href="" class="blog-post-preview">
-     <div>
+
+    <a href="" class="blog-post-preview proximamente">
+      <div>
         <div class="post-date">Próximamente</div>
         <div class="post-title">Lo que aprendí al publicar mi primer libro en KDP</div>
         <div class="post-snippet">No fue por el dinero, ya que no he vendido ninguna copia. Fue porque quería que algo fuera completamente de mi hija...</div>
       </div>
       <div class="post-arrow">→</div>
-    </div>
-   
-<a href="" class="blog-post-preview">
+    </a>
+
+    <a href="" class="blog-post-preview proximamente">
       <div>
         <div class="post-date">Próximamente</div>
         <div class="post-title">Escribir en español en un mundo que habla inglés</div>
         <div class="post-snippet">Vivo en EE.UU. Crecí en frontera y eso agringó mi mente desde que era muy pequeño...</div>
       </div>
       <div class="post-arrow">→</div>
-    </div>
-  </div>
+    </a>
 
-   
   </div>
 </section>
 
